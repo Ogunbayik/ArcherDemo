@@ -1,0 +1,9 @@
+Library
+Logs
+Packages
+ProjectSettings
+UserSettings
+.vsconfig
+Assembly-CSharp.csproj
+Assembly-CSharp-Editor.csproj
+ignore.conf
