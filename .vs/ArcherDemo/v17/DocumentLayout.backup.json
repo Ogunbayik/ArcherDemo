@@ -3,8 +3,16 @@
   "WorkspaceRootPath": "C:\\Users\\ogun\\UnityProjects\\ArcherDemo\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{B2301386-B46A-213A-EC11-809A46E854CA}|Assembly-CSharp.csproj|c:\\users\\ogun\\unityprojects\\archerdemo\\assets\\scripts\\playercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B2301386-B46A-213A-EC11-809A46E854CA}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\playercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{B2301386-B46A-213A-EC11-809A46E854CA}|Assembly-CSharp.csproj|c:\\users\\ogun\\unityprojects\\archerdemo\\assets\\scripts\\enemy\\enemybase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B2301386-B46A-213A-EC11-809A46E854CA}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\enemy\\enemybase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B2301386-B46A-213A-EC11-809A46E854CA}|Assembly-CSharp.csproj|C:\\Users\\ogun\\UnityProjects\\ArcherDemo\\assets\\scripts\\gameutils.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B2301386-B46A-213A-EC11-809A46E854CA}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\gameutils.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B2301386-B46A-213A-EC11-809A46E854CA}|Assembly-CSharp.csproj|C:\\Users\\ogun\\UnityProjects\\ArcherDemo\\assets\\scripts\\enemy\\enemyso.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B2301386-B46A-213A-EC11-809A46E854CA}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\enemy\\enemyso.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -19,15 +27,39 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "PlayerController.cs",
-              "DocumentMoniker": "C:\\Users\\ogun\\UnityProjects\\ArcherDemo\\Assets\\Scripts\\PlayerController.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\PlayerController.cs",
-              "ToolTip": "C:\\Users\\ogun\\UnityProjects\\ArcherDemo\\Assets\\Scripts\\PlayerController.cs",
-              "RelativeToolTip": "Assets\\Scripts\\PlayerController.cs",
-              "ViewState": "AgIAABAAAAAAAAAAAAAkwB4AAABMAAAAAAAAAA==",
+              "Title": "EnemyBase.cs",
+              "DocumentMoniker": "C:\\Users\\ogun\\UnityProjects\\ArcherDemo\\Assets\\Scripts\\Enemy\\EnemyBase.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Enemy\\EnemyBase.cs",
+              "ToolTip": "C:\\Users\\ogun\\UnityProjects\\ArcherDemo\\Assets\\Scripts\\Enemy\\EnemyBase.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Enemy\\EnemyBase.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAAwBIAAAA/AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-27T20:39:00.044Z",
+              "WhenOpened": "2025-11-28T10:22:20.957Z",
               "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "EnemySO.cs",
+              "DocumentMoniker": "C:\\Users\\ogun\\UnityProjects\\ArcherDemo\\Assets\\Scripts\\Enemy\\EnemySO.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Enemy\\EnemySO.cs",
+              "ToolTip": "C:\\Users\\ogun\\UnityProjects\\ArcherDemo\\Assets\\Scripts\\Enemy\\EnemySO.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Enemy\\EnemySO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAzAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-28T10:23:48.329Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "GameUtils.cs",
+              "DocumentMoniker": "C:\\Users\\ogun\\UnityProjects\\ArcherDemo\\Assets\\Scripts\\GameUtils.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\GameUtils.cs",
+              "ToolTip": "C:\\Users\\ogun\\UnityProjects\\ArcherDemo\\Assets\\Scripts\\GameUtils.cs",
+              "RelativeToolTip": "Assets\\Scripts\\GameUtils.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-28T15:10:48.032Z"
             }
           ]
         }
