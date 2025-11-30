@@ -3,36 +3,40 @@
   "WorkspaceRootPath": "C:\\Users\\ogun\\UnityProjects\\ArcherDemo\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{B2301386-B46A-213A-EC11-809A46E854CA}|Assembly-CSharp.csproj|c:\\users\\ogun\\unityprojects\\archerdemo\\assets\\scripts\\enemy\\enemybase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{B2301386-B46A-213A-EC11-809A46E854CA}|Assembly-CSharp.csproj|C:\\Users\\ogun\\UnityProjects\\ArcherDemo\\assets\\scripts\\enemy\\enemybase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B2301386-B46A-213A-EC11-809A46E854CA}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\enemy\\enemybase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B2301386-B46A-213A-EC11-809A46E854CA}|Assembly-CSharp.csproj|c:\\users\\ogun\\unityprojects\\archerdemo\\assets\\scripts\\player\\playerstatecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B2301386-B46A-213A-EC11-809A46E854CA}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\player\\playerstatecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{B2301386-B46A-213A-EC11-809A46E854CA}|Assembly-CSharp.csproj|c:\\users\\ogun\\unityprojects\\archerdemo\\assets\\scripts\\enemy\\attackstrategy\\doubleshotso.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B2301386-B46A-213A-EC11-809A46E854CA}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\enemy\\attackstrategy\\doubleshotso.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B2301386-B46A-213A-EC11-809A46E854CA}|Assembly-CSharp.csproj|c:\\users\\ogun\\unityprojects\\archerdemo\\assets\\scripts\\enemy\\ienemystate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B2301386-B46A-213A-EC11-809A46E854CA}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\enemy\\ienemystate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{B2301386-B46A-213A-EC11-809A46E854CA}|Assembly-CSharp.csproj|c:\\users\\ogun\\unityprojects\\archerdemo\\assets\\scripts\\enemy\\attackstrategy\\singleshotso.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B2301386-B46A-213A-EC11-809A46E854CA}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\enemy\\attackstrategy\\singleshotso.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B2301386-B46A-213A-EC11-809A46E854CA}|Assembly-CSharp.csproj|c:\\users\\ogun\\unityprojects\\archerdemo\\assets\\scripts\\enemy\\enemyidlestate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B2301386-B46A-213A-EC11-809A46E854CA}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\enemy\\enemyidlestate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{B2301386-B46A-213A-EC11-809A46E854CA}|Assembly-CSharp.csproj|C:\\Users\\ogun\\UnityProjects\\ArcherDemo\\assets\\scripts\\enemy\\enemychasestate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B2301386-B46A-213A-EC11-809A46E854CA}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\enemy\\enemychasestate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B2301386-B46A-213A-EC11-809A46E854CA}|Assembly-CSharp.csproj|c:\\users\\ogun\\unityprojects\\archerdemo\\assets\\scripts\\enemy\\enemywanderstate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{B2301386-B46A-213A-EC11-809A46E854CA}|Assembly-CSharp.csproj|C:\\Users\\ogun\\UnityProjects\\ArcherDemo\\assets\\scripts\\enemy\\enemyattackstate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B2301386-B46A-213A-EC11-809A46E854CA}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\enemy\\enemyattackstate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B2301386-B46A-213A-EC11-809A46E854CA}|Assembly-CSharp.csproj|C:\\Users\\ogun\\UnityProjects\\ArcherDemo\\assets\\scripts\\enemy\\enemywanderstate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B2301386-B46A-213A-EC11-809A46E854CA}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\enemy\\enemywanderstate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B2301386-B46A-213A-EC11-809A46E854CA}|Assembly-CSharp.csproj|C:\\Users\\ogun\\UnityProjects\\ArcherDemo\\assets\\scripts\\gameutils.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B2301386-B46A-213A-EC11-809A46E854CA}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\gameutils.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{B2301386-B46A-213A-EC11-809A46E854CA}|Assembly-CSharp.csproj|C:\\Users\\ogun\\UnityProjects\\ArcherDemo\\assets\\scripts\\arrow.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B2301386-B46A-213A-EC11-809A46E854CA}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\arrow.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B2301386-B46A-213A-EC11-809A46E854CA}|Assembly-CSharp.csproj|c:\\users\\ogun\\unityprojects\\archerdemo\\assets\\scripts\\enemy\\enemyrange.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B2301386-B46A-213A-EC11-809A46E854CA}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\enemy\\enemyrange.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{B2301386-B46A-213A-EC11-809A46E854CA}|Assembly-CSharp.csproj|C:\\Users\\ogun\\UnityProjects\\ArcherDemo\\assets\\scripts\\enemy\\attackstrategy\\attackstrategyso.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B2301386-B46A-213A-EC11-809A46E854CA}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\enemy\\attackstrategy\\attackstrategyso.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B2301386-B46A-213A-EC11-809A46E854CA}|Assembly-CSharp.csproj|c:\\users\\ogun\\unityprojects\\archerdemo\\assets\\scripts\\enemy\\enemymelee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B2301386-B46A-213A-EC11-809A46E854CA}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\enemy\\enemymelee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{B2301386-B46A-213A-EC11-809A46E854CA}|Assembly-CSharp.csproj|C:\\Users\\ogun\\UnityProjects\\ArcherDemo\\assets\\scripts\\enemy\\range\\skeletonarcher.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B2301386-B46A-213A-EC11-809A46E854CA}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\enemy\\range\\skeletonarcher.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{B2301386-B46A-213A-EC11-809A46E854CA}|Assembly-CSharp.csproj|C:\\Users\\ogun\\UnityProjects\\ArcherDemo\\assets\\scripts\\enemy\\enemyso.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -46,20 +50,82 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 6,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "PlayerStateController.cs",
-              "DocumentMoniker": "C:\\Users\\ogun\\UnityProjects\\ArcherDemo\\Assets\\Scripts\\Player\\PlayerStateController.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\Player\\PlayerStateController.cs",
-              "ToolTip": "C:\\Users\\ogun\\UnityProjects\\ArcherDemo\\Assets\\Scripts\\Player\\PlayerStateController.cs",
-              "RelativeToolTip": "Assets\\Scripts\\Player\\PlayerStateController.cs",
-              "ViewState": "AgIAABEAAAAAAAAAAAAgwCAAAAAmAAAAAAAAAA==",
+              "DocumentIndex": 2,
+              "Title": "SingleShotSO.cs",
+              "DocumentMoniker": "C:\\Users\\ogun\\UnityProjects\\ArcherDemo\\Assets\\Scripts\\Enemy\\AttackStrategy\\SingleShotSO.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Enemy\\AttackStrategy\\SingleShotSO.cs",
+              "ToolTip": "C:\\Users\\ogun\\UnityProjects\\ArcherDemo\\Assets\\Scripts\\Enemy\\AttackStrategy\\SingleShotSO.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Enemy\\AttackStrategy\\SingleShotSO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAA3AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-28T20:40:12.978Z",
+              "WhenOpened": "2025-11-30T20:02:17.171Z",
               "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "DoubleShotSO.cs",
+              "DocumentMoniker": "C:\\Users\\ogun\\UnityProjects\\ArcherDemo\\Assets\\Scripts\\Enemy\\AttackStrategy\\DoubleShotSO.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Enemy\\AttackStrategy\\DoubleShotSO.cs",
+              "ToolTip": "C:\\Users\\ogun\\UnityProjects\\ArcherDemo\\Assets\\Scripts\\Enemy\\AttackStrategy\\DoubleShotSO.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Enemy\\AttackStrategy\\DoubleShotSO.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAABMAAABBAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-30T20:01:24.269Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "EnemyChaseState.cs",
+              "DocumentMoniker": "C:\\Users\\ogun\\UnityProjects\\ArcherDemo\\Assets\\Scripts\\Enemy\\EnemyChaseState.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Enemy\\EnemyChaseState.cs",
+              "ToolTip": "C:\\Users\\ogun\\UnityProjects\\ArcherDemo\\Assets\\Scripts\\Enemy\\EnemyChaseState.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Enemy\\EnemyChaseState.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-30T15:17:59.512Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "EnemyWanderState.cs",
+              "DocumentMoniker": "C:\\Users\\ogun\\UnityProjects\\ArcherDemo\\Assets\\Scripts\\Enemy\\EnemyWanderState.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Enemy\\EnemyWanderState.cs",
+              "ToolTip": "C:\\Users\\ogun\\UnityProjects\\ArcherDemo\\Assets\\Scripts\\Enemy\\EnemyWanderState.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Enemy\\EnemyWanderState.cs",
+              "ViewState": "AgIAABcAAAAAAAAAAAAgwAwAAABFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-30T15:17:53.944Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "AttackStrategySO.cs",
+              "DocumentMoniker": "C:\\Users\\ogun\\UnityProjects\\ArcherDemo\\Assets\\Scripts\\Enemy\\AttackStrategy\\AttackStrategySO.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Enemy\\AttackStrategy\\AttackStrategySO.cs",
+              "ToolTip": "C:\\Users\\ogun\\UnityProjects\\ArcherDemo\\Assets\\Scripts\\Enemy\\AttackStrategy\\AttackStrategySO.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Enemy\\AttackStrategy\\AttackStrategySO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAA0AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-30T15:13:03.813Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Arrow.cs",
+              "DocumentMoniker": "C:\\Users\\ogun\\UnityProjects\\ArcherDemo\\Assets\\Scripts\\Arrow.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Arrow.cs",
+              "ToolTip": "C:\\Users\\ogun\\UnityProjects\\ArcherDemo\\Assets\\Scripts\\Arrow.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Arrow.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-30T15:04:49.197Z"
             },
             {
               "$type": "Document",
@@ -69,101 +135,46 @@
               "RelativeDocumentMoniker": "Assets\\Scripts\\Enemy\\EnemyBase.cs",
               "ToolTip": "C:\\Users\\ogun\\UnityProjects\\ArcherDemo\\Assets\\Scripts\\Enemy\\EnemyBase.cs",
               "RelativeToolTip": "Assets\\Scripts\\Enemy\\EnemyBase.cs",
-              "ViewState": "AgIAABYAAAAAAAAAAAAQwCcAAAAiAAAAAAAAAA==",
+              "ViewState": "AgIAABoAAAAAAAAAAAA9wCAAAAAkAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-11-28T20:24:11.579Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "IEnemyState.cs",
-              "DocumentMoniker": "C:\\Users\\ogun\\UnityProjects\\ArcherDemo\\Assets\\Scripts\\Enemy\\IEnemyState.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\Enemy\\IEnemyState.cs",
-              "ToolTip": "C:\\Users\\ogun\\UnityProjects\\ArcherDemo\\Assets\\Scripts\\Enemy\\IEnemyState.cs",
-              "RelativeToolTip": "Assets\\Scripts\\Enemy\\IEnemyState.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAEAAAAAAAAAA==",
+              "DocumentIndex": 8,
+              "Title": "SkeletonArcher.cs",
+              "DocumentMoniker": "C:\\Users\\ogun\\UnityProjects\\ArcherDemo\\Assets\\Scripts\\Enemy\\Range\\SkeletonArcher.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Enemy\\Range\\SkeletonArcher.cs",
+              "ToolTip": "C:\\Users\\ogun\\UnityProjects\\ArcherDemo\\Assets\\Scripts\\Enemy\\Range\\SkeletonArcher.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Enemy\\Range\\SkeletonArcher.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAVAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-28T20:37:33.637Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "EnemyRange.cs",
-              "DocumentMoniker": "C:\\Users\\ogun\\UnityProjects\\ArcherDemo\\Assets\\Scripts\\Enemy\\EnemyRange.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\Enemy\\EnemyRange.cs",
-              "ToolTip": "C:\\Users\\ogun\\UnityProjects\\ArcherDemo\\Assets\\Scripts\\Enemy\\EnemyRange.cs",
-              "RelativeToolTip": "Assets\\Scripts\\Enemy\\EnemyRange.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-28T20:23:44.208Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "EnemyIdleState.cs",
-              "DocumentMoniker": "C:\\Users\\ogun\\UnityProjects\\ArcherDemo\\Assets\\Scripts\\Enemy\\EnemyIdleState.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\Enemy\\EnemyIdleState.cs",
-              "ToolTip": "C:\\Users\\ogun\\UnityProjects\\ArcherDemo\\Assets\\Scripts\\Enemy\\EnemyIdleState.cs",
-              "RelativeToolTip": "Assets\\Scripts\\Enemy\\EnemyIdleState.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAArAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-28T20:16:36.44Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "EnemyMelee.cs",
-              "DocumentMoniker": "C:\\Users\\ogun\\UnityProjects\\ArcherDemo\\Assets\\Scripts\\Enemy\\EnemyMelee.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\Enemy\\EnemyMelee.cs",
-              "ToolTip": "C:\\Users\\ogun\\UnityProjects\\ArcherDemo\\Assets\\Scripts\\Enemy\\EnemyMelee.cs",
-              "RelativeToolTip": "Assets\\Scripts\\Enemy\\EnemyMelee.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-28T20:23:24.685Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "GameUtils.cs",
-              "DocumentMoniker": "C:\\Users\\ogun\\UnityProjects\\ArcherDemo\\Assets\\Scripts\\GameUtils.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\GameUtils.cs",
-              "ToolTip": "C:\\Users\\ogun\\UnityProjects\\ArcherDemo\\Assets\\Scripts\\GameUtils.cs",
-              "RelativeToolTip": "Assets\\Scripts\\GameUtils.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-28T15:10:48.032Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-30T11:42:08.841Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 4,
-              "Title": "EnemyWanderState.cs",
-              "DocumentMoniker": "C:\\Users\\ogun\\UnityProjects\\ArcherDemo\\Assets\\Scripts\\Enemy\\EnemyWanderState.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\Enemy\\EnemyWanderState.cs",
-              "ToolTip": "C:\\Users\\ogun\\UnityProjects\\ArcherDemo\\Assets\\Scripts\\Enemy\\EnemyWanderState.cs",
-              "RelativeToolTip": "Assets\\Scripts\\Enemy\\EnemyWanderState.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAFAAAAAAAAAA==",
+              "Title": "EnemyAttackState.cs",
+              "DocumentMoniker": "C:\\Users\\ogun\\UnityProjects\\ArcherDemo\\Assets\\Scripts\\Enemy\\EnemyAttackState.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Enemy\\EnemyAttackState.cs",
+              "ToolTip": "C:\\Users\\ogun\\UnityProjects\\ArcherDemo\\Assets\\Scripts\\Enemy\\EnemyAttackState.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Enemy\\EnemyAttackState.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAmAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-28T20:16:57.172Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-30T11:53:24.097Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 9,
               "Title": "EnemySO.cs",
               "DocumentMoniker": "C:\\Users\\ogun\\UnityProjects\\ArcherDemo\\Assets\\Scripts\\Enemy\\EnemySO.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Enemy\\EnemySO.cs",
               "ToolTip": "C:\\Users\\ogun\\UnityProjects\\ArcherDemo\\Assets\\Scripts\\Enemy\\EnemySO.cs",
               "RelativeToolTip": "Assets\\Scripts\\Enemy\\EnemySO.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAzAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAlAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-28T10:23:48.329Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-28T10:23:48.329Z"
             }
           ]
         }

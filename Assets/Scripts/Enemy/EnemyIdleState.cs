@@ -2,9 +2,13 @@ using UnityEngine;
 
 public class EnemyIdleState : IEnemyState
 {
+    private float startMoveTime = 3f;
+
+    private float moveTimer;
     public void EnterState(EnemyBase enemy)
     {
-        Debug.Log(enemy.EnemySO.Name + " is Spawned with Idle");
+        moveTimer = startMoveTime;
+        enemy.SetStateName("Idle State", Color.darkSeaGreen);
     }
 
     public void ExitState(EnemyBase enemy)
@@ -14,6 +18,9 @@ public class EnemyIdleState : IEnemyState
 
     public void Tick(EnemyBase enemy)
     {
-        
+        moveTimer -= Time.deltaTime;
+
+        if (moveTimer <= 0)
+            enemy.SwitchState(enemy.WanderState);
     }
 }
