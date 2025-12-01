@@ -29,8 +29,11 @@ public abstract class EnemyBase : MonoBehaviour
 
     
     public Vector3 InitialPosition => _initialPosition;
-    public PlayerStateController TargetPlayer => _player;
+    public PlayerStateController Player => _player;
     public Transform AttackTransform => _attackTransform;
+
+    private float _currentAttackCooldown;
+    private bool canAttack;
 
     protected virtual void Awake()
     {
@@ -60,6 +63,8 @@ public abstract class EnemyBase : MonoBehaviour
     }
     private void Update()
     {
+        DecreaseAttackCooldown();
+
         _currentState.Tick(this);
     }
     public void SwitchState(IEnemyState newState)
@@ -76,15 +81,40 @@ public abstract class EnemyBase : MonoBehaviour
         stateText.text = stateName;
         stateText.color = color;
     }
-
+    public bool TargetInChaseDistance()
+    {
+        return GetDistanceBetweenPlayer() <= _currentEnemySO.ChaseDistance;
+    }
+    public bool TargetInAttackRange()
+    {
+        return GetDistanceBetweenPlayer() <= _currentEnemySO.AttackDistance;
+    }
     public float GetDistanceBetweenPlayer()
     {
-        var distance = Vector3.Distance(transform.position, TargetPlayer.transform.position);
+        var distance = Vector3.Distance(transform.position, Player.transform.position);
         return distance;
     }
     public void SetMovement(Vector3 targetPos, float speed)
     {
         _agent.SetDestination(targetPos);
         _agent.speed = speed;
+    }
+    public void SetCurrentCooldown(float value)
+    {
+        _currentAttackCooldown = value;
+    }
+    public void DecreaseAttackCooldown()
+    {
+        if (canAttack)
+            return;
+
+        if (_currentAttackCooldown > 0)
+            _currentAttackCooldown -= Time.deltaTime;
+        else
+            _currentAttackCooldown = 0;
+    }
+    public bool CanAttack()
+    {
+        return _currentAttackCooldown == 0;
     }
 }

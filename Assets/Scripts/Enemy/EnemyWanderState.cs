@@ -18,7 +18,7 @@ public class EnemyWanderState : IEnemyState
     }
     public void Tick(EnemyBase enemy)
     {
-        if (enemy.GetDistanceBetweenPlayer() <= enemy.EnemySO.ChaseDistance)
+        if (enemy.TargetInChaseDistance())
             enemy.SwitchState(enemy.ChaseState);
 
         if(!enemy.Agent.pathPending && enemy.Agent.remainingDistance <= enemy.Agent.stoppingDistance)

@@ -9,11 +9,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e0b22aafca4224b47822b9784ef77259, type: 3}
-  m_Name: Skeleton_Double
-  m_EditorClassIdentifier: Assembly-CSharp::DoubleShotSO
+  m_Script: {fileID: 11500000, guid: 2a2bea4e4a6e26c479d0dbc63fcdc390, type: 3}
+  m_Name: DoubleAttack
+  m_EditorClassIdentifier: Assembly-CSharp::RangedAttackSO
   attackDamage: 0
   attackCooldown: 0
-  attackPrefab: {fileID: 4529963004185189385, guid: f4c8b02e7896bf84ebd4fa178b137069, type: 3}
-  distanceToPrefab: 0.2
+  attackPrefab: {fileID: 5064290497617234695, guid: f4c8b02e7896bf84ebd4fa178b137069, type: 3}
+  prefabCount: 2
   prefabSpeed: 5
+  distanceToPrefab: 0.4

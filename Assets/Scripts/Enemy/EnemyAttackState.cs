@@ -1,3 +1,4 @@
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class EnemyAttackState : IEnemyState
@@ -6,10 +7,14 @@ public class EnemyAttackState : IEnemyState
     {
         //Create HandleAttackSequnce
         enemy.Agent.isStopped = true;
-        enemy.transform.LookAt(enemy.TargetPlayer.transform.position);
+        enemy.transform.LookAt(enemy.Player.transform.position);
         enemy.SetStateName("Attack State", Color.darkRed);
-        Debug.Log("Player is Attacking to Player now!");
-        enemy.CurrentAttackSO.ExecuteAttack(enemy);
+
+        if (enemy.CanAttack())
+        {
+            enemy.CurrentAttackSO.ExecuteAttack(enemy);
+            enemy.SetCurrentCooldown(enemy.CurrentAttackSO.AttackCooldown);
+        }
     }
 
     public void ExitState(EnemyBase enemy)
@@ -19,7 +24,15 @@ public class EnemyAttackState : IEnemyState
 
     public void Tick(EnemyBase enemy)
     {
-        if (enemy.GetDistanceBetweenPlayer() > enemy.EnemySO.AttackDistance)
+        enemy.transform.LookAt(enemy.Player.transform);
+
+        if (!enemy.TargetInAttackRange())
             enemy.SwitchState(enemy.ChaseState);
+
+        if (enemy.CanAttack())
+        {
+            enemy.CurrentAttackSO.ExecuteAttack(enemy);
+            enemy.SetCurrentCooldown(enemy.CurrentAttackSO.AttackCooldown);
+        }
     }
 }
