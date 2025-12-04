@@ -12,10 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2ab027cdc86490540b2bcbfc44f124a7, type: 3}
   m_Name: Skeleton_Archer
   m_EditorClassIdentifier: Assembly-CSharp::EnemySO
-  _enemyName: Skeleton Arher
-  _attackDistance: 8
+  _enemyName: Skeleton Archer
+  _attackDistance: 10
   _attackRate: 0
   _wanderDistance: 5
   _wanderSpeed: 1.5
-  _chaseDistance: 12
+  _chaseDistance: 15
   _chaseSpeed: 2.5

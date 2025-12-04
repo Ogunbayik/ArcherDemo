@@ -1002,8 +1002,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a3b34cdfa767b0e45a307a45e925794d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SkeletonArcher
-  _currentEnemySO: {fileID: 11400000, guid: 82fbf79ed36166b44810f54221cb1373, type: 2}
-  _currentAttackSO: {fileID: 11400000, guid: 01a3760b332bc6645a415c7eec2b2edd, type: 2}
+  _enemySO: {fileID: 11400000, guid: 82fbf79ed36166b44810f54221cb1373, type: 2}
+  _attackStrategy: {fileID: 11400000, guid: 13d011f19fbcde74d9bcb4a958c67383, type: 2}
   _attackTransform: {fileID: 1929970950}
   stateText: {fileID: 808013592}
 --- !u!1 &1643700364

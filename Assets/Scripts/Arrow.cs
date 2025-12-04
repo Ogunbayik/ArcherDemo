@@ -12,7 +12,6 @@ public class Arrow : MonoBehaviour
     {
         HandleMovement();
     }
-
     private void HandleMovement()
     {
         transform.Translate(Vector3.forward * movementSpeed * Time.deltaTime);

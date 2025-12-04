@@ -7,25 +7,28 @@ public abstract class EnemyBase : MonoBehaviour
     protected NavMeshAgent _agent;
     protected PlayerStateController _player;
 
-    [Header("EnemySO")]
-    [SerializeField] protected EnemySO _currentEnemySO;
-    [SerializeField] protected AttackStrategySO _currentAttackSO;
+    [Header("Enemy Settings")]
+    [SerializeField] protected EnemySO _enemySO;
+    [Header("Attack Settings")]
+    [SerializeField] protected AttackStrategySO _attackStrategy;
     [SerializeField] protected Transform _attackTransform;
-    public EnemySO EnemySO => _currentEnemySO;
-    public AttackStrategySO CurrentAttackSO => _currentAttackSO;
+    public EnemySO EnemySO => _enemySO;
+    public AttackStrategySO CurrentAttackSO => _attackStrategy;
     public NavMeshAgent Agent => _agent;
 
+    [Header("Test Parts")]
     public TextMeshProUGUI stateText;
 
     private Vector3 _initialPosition;
 
     protected IEnemyState _currentState;
+    public IEnemyState CurrentState => _currentState;
+
 
     public EnemyIdleState IdleState { get; protected set; }
     public EnemyWanderState WanderState { get; protected set; }
     public EnemyChaseState ChaseState { get; protected set; }
     public EnemyAttackState AttackState { get; protected set; }
-    public IEnemyState CurrentState => _currentState;
 
     
     public Vector3 InitialPosition => _initialPosition;
@@ -54,7 +57,7 @@ public abstract class EnemyBase : MonoBehaviour
     }
     private void SetupEnemy()
     {
-        _agent.speed = _currentEnemySO.WanderSpeed;
+        _agent.speed = _enemySO.WanderSpeed;
         _initialPosition = transform.position;
     }
     private void Start()
@@ -83,11 +86,11 @@ public abstract class EnemyBase : MonoBehaviour
     }
     public bool TargetInChaseDistance()
     {
-        return GetDistanceBetweenPlayer() <= _currentEnemySO.ChaseDistance;
+        return GetDistanceBetweenPlayer() <= _enemySO.ChaseDistance;
     }
     public bool TargetInAttackRange()
     {
-        return GetDistanceBetweenPlayer() <= _currentEnemySO.AttackDistance;
+        return GetDistanceBetweenPlayer() <= _enemySO.AttackDistance;
     }
     public float GetDistanceBetweenPlayer()
     {

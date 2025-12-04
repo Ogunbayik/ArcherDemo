@@ -12,7 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2ab027cdc86490540b2bcbfc44f124a7, type: 3}
   m_Name: Skeleton_Warrior
   m_EditorClassIdentifier: Assembly-CSharp::EnemySO
-  _enemyType: 0
-  _enemyName: Skeleton
-  _movementSpeed: 2
+  _enemyName: Skeleton Warrior
   _attackDistance: 1.5
+  _attackRate: 0
+  _wanderDistance: 0
+  _wanderSpeed: 0
+  _chaseDistance: 0
+  _chaseSpeed: 0

@@ -15,6 +15,6 @@ MonoBehaviour:
   attackDamage: 0
   _attackCooldown: 3
   attackPrefab: {fileID: 4529963004185189385, guid: f4c8b02e7896bf84ebd4fa178b137069, type: 3}
-  prefabCount: 5
-  prefabSpeed: 5
+  prefabCount: 3
+  prefabSpeed: 7
   prefabDegree: 10
