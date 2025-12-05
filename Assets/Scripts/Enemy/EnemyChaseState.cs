@@ -4,8 +4,8 @@ public class EnemyChaseState : IEnemyState
 {
     public void EnterState(EnemyBase enemy)
     {
-        enemy.SetStateName("Chase State", Color.red);
-        enemy.SetMovement(enemy.Player.transform.position, enemy.EnemySO.ChaseSpeed);
+        enemy.TestSetStateText("Chase State", Color.red);
+        enemy.SetMovement(enemy.Player.transform.position, enemy.EnemyData.ChaseSpeed);
     }
 
     public void ExitState(EnemyBase enemy)

@@ -1,9 +1,10 @@
 using UnityEngine;
 
-public class SkeletonArcher : EnemyBase
+public class Bomber : EnemySuicide
 {
     protected override void Awake()
     {
         base.Awake();
     }
+
 }

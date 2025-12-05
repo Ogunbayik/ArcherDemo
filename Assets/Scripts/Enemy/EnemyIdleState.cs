@@ -8,7 +8,7 @@ public class EnemyIdleState : IEnemyState
     public void EnterState(EnemyBase enemy)
     {
         moveTimer = startMoveTime;
-        enemy.SetStateName("Idle State", Color.darkSeaGreen);
+        enemy.TestSetStateText("Idle State", Color.darkSeaGreen);
     }
 
     public void ExitState(EnemyBase enemy)

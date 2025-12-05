@@ -20,11 +20,10 @@ public class SpreadAttackSO : AttackStrategySO
         for (int i = 0; i < prefabCount; i++)
         {
             var prefab = Instantiate(attackPrefab);
-            prefab.transform.position = enemy.AttackTransform.position;
+            prefab.transform.position = enemy.GetAttackTransform().position;
             prefab.transform.rotation = enemy.transform.rotation;
 
             var rotationMultiplier = Mathf.Ceil((float)i / 2f);
-            Debug.Log(rotationMultiplier);
 
             var isEvenIndex = i % 2 == 0;
             if (isEvenIndex)

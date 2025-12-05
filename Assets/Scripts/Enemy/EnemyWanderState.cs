@@ -7,10 +7,10 @@ public class EnemyWanderState : IEnemyState
     private Vector3 wanderPosition;
     public void EnterState(EnemyBase enemy)
     {
-        enemy.SetStateName("Wander State", Color.darkGreen);
+        enemy.TestSetStateText("Wander State", Color.darkGreen);
 
         wanderPosition = GetRandomPosition(enemy);
-        enemy.SetMovement(wanderPosition, enemy.EnemySO.WanderSpeed);
+        enemy.SetMovement(wanderPosition, enemy.EnemyData.WanderSpeed);
     }
     public void ExitState(EnemyBase enemy)
     {
@@ -19,7 +19,7 @@ public class EnemyWanderState : IEnemyState
     public void Tick(EnemyBase enemy)
     {
         if (enemy.TargetInChaseDistance())
-            enemy.SwitchState(enemy.ChaseState);
+            enemy.OnChaseStart();
 
         if(!enemy.Agent.pathPending && enemy.Agent.remainingDistance <= enemy.Agent.stoppingDistance)
         {
@@ -31,12 +31,12 @@ public class EnemyWanderState : IEnemyState
     {
         for (int i = 0; i < maxAttempts; i++)
         {
-            var randomPosition = Random.insideUnitSphere * enemy.EnemySO.WanderDistance;
+            var randomPosition = Random.insideUnitSphere * enemy.EnemyData.WanderDistance;
             randomPosition += enemy.InitialPosition;
 
             NavMeshHit hit;
 
-            if (NavMesh.SamplePosition(randomPosition, out hit, enemy.EnemySO.WanderDistance, NavMesh.AllAreas))
+            if (NavMesh.SamplePosition(randomPosition, out hit, enemy.EnemyData.WanderDistance, NavMesh.AllAreas))
                 return hit.position;
         }
 

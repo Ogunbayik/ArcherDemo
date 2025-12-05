@@ -1,4 +1,3 @@
-using Unity.VisualScripting;
 using UnityEngine;
 
 public class EnemyAttackState : IEnemyState
@@ -8,12 +7,12 @@ public class EnemyAttackState : IEnemyState
         //Create HandleAttackSequnce
         enemy.Agent.isStopped = true;
         enemy.transform.LookAt(enemy.Player.transform.position);
-        enemy.SetStateName("Attack State", Color.darkRed);
+        enemy.TestSetStateText("Attack State", Color.darkRed);
 
         if (enemy.CanAttack())
         {
-            enemy.CurrentAttackSO.ExecuteAttack(enemy);
-            enemy.SetCurrentCooldown(enemy.CurrentAttackSO.AttackCooldown);
+            enemy.AttackStrategy().ExecuteAttack(enemy);
+            enemy.SetCurrentCooldown(enemy.AttackStrategy().AttackCooldown);
         }
     }
 
@@ -31,8 +30,8 @@ public class EnemyAttackState : IEnemyState
 
         if (enemy.CanAttack())
         {
-            enemy.CurrentAttackSO.ExecuteAttack(enemy);
-            enemy.SetCurrentCooldown(enemy.CurrentAttackSO.AttackCooldown);
+            enemy.AttackStrategy().ExecuteAttack(enemy);
+            enemy.SetCurrentCooldown(enemy.AttackStrategy().AttackCooldown);
         }
     }
 }

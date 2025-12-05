@@ -6,38 +6,30 @@ public abstract class EnemyBase : MonoBehaviour
 {
     protected NavMeshAgent _agent;
     protected PlayerStateController _player;
+    protected IEnemyState _currentState;
 
     [Header("Enemy Settings")]
-    [SerializeField] protected EnemySO _enemySO;
-    [Header("Attack Settings")]
-    [SerializeField] protected AttackStrategySO _attackStrategy;
-    [SerializeField] protected Transform _attackTransform;
-    public EnemySO EnemySO => _enemySO;
-    public AttackStrategySO CurrentAttackSO => _attackStrategy;
-    public NavMeshAgent Agent => _agent;
-
+    [SerializeField] protected BaseEnemyDataSO _enemyDataSO;
     [Header("Test Parts")]
     public TextMeshProUGUI stateText;
-
-    private Vector3 _initialPosition;
-
-    protected IEnemyState _currentState;
-    public IEnemyState CurrentState => _currentState;
 
 
     public EnemyIdleState IdleState { get; protected set; }
     public EnemyWanderState WanderState { get; protected set; }
     public EnemyChaseState ChaseState { get; protected set; }
     public EnemyAttackState AttackState { get; protected set; }
+    public EnemySelfDestructionState SelfDestructionState { get; protected set; }
 
     
+    public BaseEnemyDataSO EnemyData => _enemyDataSO;
+    public NavMeshAgent Agent => _agent;
     public Vector3 InitialPosition => _initialPosition;
     public PlayerStateController Player => _player;
-    public Transform AttackTransform => _attackTransform;
+
+
+    private Vector3 _initialPosition;
 
     private float _currentAttackCooldown;
-    private bool canAttack;
-
     protected virtual void Awake()
     {
         _agent = GetComponent<NavMeshAgent>();
@@ -52,12 +44,13 @@ public abstract class EnemyBase : MonoBehaviour
         WanderState = new EnemyWanderState();
         ChaseState = new EnemyChaseState();
         AttackState = new EnemyAttackState();
+        SelfDestructionState = new EnemySelfDestructionState();
 
         _currentState = IdleState;
     }
     private void SetupEnemy()
     {
-        _agent.speed = _enemySO.WanderSpeed;
+        _agent.speed = _enemyDataSO.WanderSpeed;
         _initialPosition = transform.position;
     }
     private void Start()
@@ -79,20 +72,12 @@ public abstract class EnemyBase : MonoBehaviour
         _currentState = newState;
         _currentState.EnterState(this);
     }
-    public void SetStateName(string stateName, Color color)
+    public void TestSetStateText(string stateName, Color color)
     {
         stateText.text = stateName;
         stateText.color = color;
     }
-    public bool TargetInChaseDistance()
-    {
-        return GetDistanceBetweenPlayer() <= _enemySO.ChaseDistance;
-    }
-    public bool TargetInAttackRange()
-    {
-        return GetDistanceBetweenPlayer() <= _enemySO.AttackDistance;
-    }
-    public float GetDistanceBetweenPlayer()
+    protected float GetDistanceBetweenPlayer()
     {
         var distance = Vector3.Distance(transform.position, Player.transform.position);
         return distance;
@@ -106,9 +91,9 @@ public abstract class EnemyBase : MonoBehaviour
     {
         _currentAttackCooldown = value;
     }
-    public void DecreaseAttackCooldown()
+    private void DecreaseAttackCooldown()
     {
-        if (canAttack)
+        if (CanAttack())
             return;
 
         if (_currentAttackCooldown > 0)
@@ -120,4 +105,14 @@ public abstract class EnemyBase : MonoBehaviour
     {
         return _currentAttackCooldown == 0;
     }
+    public bool TargetInChaseDistance()
+    {
+        return GetDistanceBetweenPlayer() <= _enemyDataSO.ChaseDistance;
+    }
+    public abstract bool TargetInAttackRange();
+    public abstract Transform GetAttackTransform();
+    public abstract AttackStrategySO AttackStrategy();
+    public abstract float GetSelfDestructionTime();
+    public abstract void OnChaseStart();
+
 }
