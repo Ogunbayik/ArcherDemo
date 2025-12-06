@@ -9,7 +9,7 @@ public class EnemyMelee : EnemyBase
     {
         SwitchState(ChaseState);
     }
-    public override float GetSelfDestructionTime()
+    public override float GetSuicideTime()
     {
         return 0f;
     }

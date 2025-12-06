@@ -9,6 +9,7 @@ public class EnemyWanderState : IEnemyState
     {
         enemy.TestSetStateText("Wander State", Color.darkGreen);
 
+        enemy.AnimationController.PlayWalkAnimation(true);
         wanderPosition = GetRandomPosition(enemy);
         enemy.SetMovement(wanderPosition, enemy.EnemyData.WanderSpeed);
     }

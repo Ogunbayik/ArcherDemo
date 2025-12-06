@@ -11,7 +11,7 @@ public class EnemyRange : EnemyBase
     {
         SwitchState(ChaseState);
     }
-    public override float GetSelfDestructionTime()
+    public override float GetSuicideTime()
     {
         return 0f;
     }

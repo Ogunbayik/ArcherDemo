@@ -7,6 +7,7 @@ public abstract class EnemyBase : MonoBehaviour
     protected NavMeshAgent _agent;
     protected PlayerStateController _player;
     protected IEnemyState _currentState;
+    protected EnemyAnimationController _animationController;
 
     [Header("Enemy Settings")]
     [SerializeField] protected BaseEnemyDataSO _enemyDataSO;
@@ -18,13 +19,15 @@ public abstract class EnemyBase : MonoBehaviour
     public EnemyWanderState WanderState { get; protected set; }
     public EnemyChaseState ChaseState { get; protected set; }
     public EnemyAttackState AttackState { get; protected set; }
-    public EnemySelfDestructionState SelfDestructionState { get; protected set; }
+    public EnemySuicideState SuicideState { get; protected set; }
 
     
+    public IEnemyState CurrentState => _currentState;
     public BaseEnemyDataSO EnemyData => _enemyDataSO;
     public NavMeshAgent Agent => _agent;
     public Vector3 InitialPosition => _initialPosition;
     public PlayerStateController Player => _player;
+    public EnemyAnimationController AnimationController => _animationController;
 
 
     private Vector3 _initialPosition;
@@ -34,6 +37,7 @@ public abstract class EnemyBase : MonoBehaviour
     {
         _agent = GetComponent<NavMeshAgent>();
         _player = GameObject.FindAnyObjectByType<PlayerStateController>();
+        _animationController = GetComponent<EnemyAnimationController>();
 
         InitializeStates();
         SetupEnemy();
@@ -44,7 +48,7 @@ public abstract class EnemyBase : MonoBehaviour
         WanderState = new EnemyWanderState();
         ChaseState = new EnemyChaseState();
         AttackState = new EnemyAttackState();
-        SelfDestructionState = new EnemySelfDestructionState();
+        SuicideState = new EnemySuicideState();
 
         _currentState = IdleState;
     }
@@ -109,10 +113,15 @@ public abstract class EnemyBase : MonoBehaviour
     {
         return GetDistanceBetweenPlayer() <= _enemyDataSO.ChaseDistance;
     }
+    public void StoppedCharacter()
+    {
+        _agent.isStopped = true;
+        _agent.ResetPath();
+    }
     public abstract bool TargetInAttackRange();
     public abstract Transform GetAttackTransform();
     public abstract AttackStrategySO AttackStrategy();
-    public abstract float GetSelfDestructionTime();
+    public abstract float GetSuicideTime();
     public abstract void OnChaseStart();
 
 }

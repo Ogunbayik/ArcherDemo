@@ -16,6 +16,6 @@ MonoBehaviour:
   _wanderDistance: 5
   _wanderSpeed: 0.5
   _chaseDistance: 15
-  _chaseSpeed: 2
+  _chaseSpeed: 3.5
   _suicideTime: 5
   _explosionRadius: 5

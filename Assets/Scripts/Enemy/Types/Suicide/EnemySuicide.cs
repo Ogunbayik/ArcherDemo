@@ -6,15 +6,14 @@ public class EnemySuicide : EnemyBase
 
     public override void OnChaseStart()
     {
-        Debug.Log("Suicide State");
-        SwitchState(SelfDestructionState);
+        SwitchState(SuicideState);
     }
     public override bool TargetInAttackRange()
     {
         //Checking for melee and range Enemies
         return false;
     }
-    public override float GetSelfDestructionTime()
+    public override float GetSuicideTime()
     {
         return SuicideData.SuicideTime;
     }
