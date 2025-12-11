@@ -14,8 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::RangeDataSO
   _enemyName: SkeletonArcher
   _wanderDistance: 5
-  _wanderSpeed: 1.5
+  _wanderSpeed: 0.5
   _chaseDistance: 15
-  _chaseSpeed: 2.5
+  _chaseSpeed: 2
   _attackDistance: 10
-  _attackStrategy: {fileID: 11400000, guid: e79b7c04f87a1ef49b16d0d3794e6e0f, type: 2}
+  _attackStrategy: {fileID: 11400000, guid: 01a3760b332bc6645a415c7eec2b2edd, type: 2}

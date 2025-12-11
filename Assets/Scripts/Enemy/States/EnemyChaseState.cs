@@ -4,14 +4,14 @@ public class EnemyChaseState : IEnemyState
 {
     public void EnterState(EnemyBase enemy)
     {
-        enemy.AnimationController.PlayWalkAnimation(true);
+        enemy.AnimationController.PlayRunAnimation(true);
         enemy.TestSetStateText("Chase State", Color.red);
         enemy.SetMovement(enemy.Player.transform.position, enemy.EnemyData.ChaseSpeed);
     }
 
     public void ExitState(EnemyBase enemy)
     {
-
+        enemy.AnimationController.PlayRunAnimation(false);
     }
 
     public void Tick(EnemyBase enemy)

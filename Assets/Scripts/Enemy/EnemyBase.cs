@@ -20,6 +20,7 @@ public abstract class EnemyBase : MonoBehaviour
     public EnemyChaseState ChaseState { get; protected set; }
     public EnemyAttackState AttackState { get; protected set; }
     public EnemySuicideState SuicideState { get; protected set; }
+    public EnemyAttackWaitState AttackWaitState { get; protected set; }
 
     
     public IEnemyState CurrentState => _currentState;
@@ -49,6 +50,7 @@ public abstract class EnemyBase : MonoBehaviour
         ChaseState = new EnemyChaseState();
         AttackState = new EnemyAttackState();
         SuicideState = new EnemySuicideState();
+        AttackWaitState = new EnemyAttackWaitState();
 
         _currentState = IdleState;
     }

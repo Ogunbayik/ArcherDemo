@@ -20,6 +20,14 @@ public class EnemyAnimationController : MonoBehaviour
     {
         animator.SetTrigger("OnExplode");
     }
+    public void PlayRunAnimation(bool isActive)
+    {
+        animator.SetBool("isRun", isActive);
+    }
+    public void PlayAttackAnimation()
+    {
+        animator.SetTrigger("OnAttack");
+    }
 
 
 }
