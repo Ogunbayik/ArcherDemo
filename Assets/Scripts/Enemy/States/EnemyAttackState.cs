@@ -1,6 +1,5 @@
 using UnityEngine;
 using DG.Tweening;
-using UnityEditor.ShaderGraph.Serialization;
 
 public class EnemyAttackState : IEnemyState
 {
@@ -24,8 +23,19 @@ public class EnemyAttackState : IEnemyState
 
     public void Tick(EnemyBase enemy)
     {
+        RotateEnemy(enemy);
+
         if (!enemy.CanAttack())
             enemy.SwitchState(enemy.AttackWaitState);
+    }
+
+    private void RotateEnemy(EnemyBase enemy)
+    {
+        var lookRotation = enemy.Player.transform.position - enemy.transform.position;
+        lookRotation.y = 0;
+
+        Quaternion targetRotation = Quaternion.LookRotation(lookRotation);
+        enemy.transform.rotation = Quaternion.Slerp(enemy.transform.rotation, targetRotation, 150f * Time.deltaTime);
     }
     
     private void HandleAttackSequence(EnemyBase enemy)

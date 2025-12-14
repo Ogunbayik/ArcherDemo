@@ -9,12 +9,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e97cf3338200d664f9dd649fbdf2bc4f, type: 3}
-  m_Name: Spread_Triple
-  m_EditorClassIdentifier: Assembly-CSharp::SpreadAttackSO
+  m_Script: {fileID: 11500000, guid: 2a2bea4e4a6e26c479d0dbc63fcdc390, type: 3}
+  m_Name: Arrow_Triple
+  m_EditorClassIdentifier: Assembly-CSharp::RangedAttackSO
   attackDamage: 0
   _attackCooldown: 3
-  attackPrefab: {fileID: 5731860419663832173, guid: 634b47ab637060546badeced2f523051, type: 3}
+  attackPrefab: {fileID: 6496670241937043103, guid: 634b47ab637060546badeced2f523051, type: 3}
   prefabCount: 3
-  prefabSpeed: 7
-  prefabDegree: 10
+  prefabSpeed: 5
+  distanceToPrefab: 0.4

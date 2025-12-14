@@ -10,7 +10,6 @@ public abstract class BaseEnemyDataSO : ScriptableObject
     [SerializeField] private float _chaseDistance;
     [SerializeField] private float _chaseSpeed;
 
-
     public string Name => _enemyName;
     public float WanderDistance => _wanderDistance;
     public float WanderSpeed => _wanderSpeed;

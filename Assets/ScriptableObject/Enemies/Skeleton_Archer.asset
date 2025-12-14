@@ -18,4 +18,4 @@ MonoBehaviour:
   _chaseDistance: 15
   _chaseSpeed: 2
   _attackDistance: 10
-  _attackStrategy: {fileID: 11400000, guid: 01a3760b332bc6645a415c7eec2b2edd, type: 2}
+  _attackStrategy: {fileID: 11400000, guid: 13d011f19fbcde74d9bcb4a958c67383, type: 2}
