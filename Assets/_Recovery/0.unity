@@ -744,7 +744,6 @@ MonoBehaviour:
   - {fileID: 11400000, guid: baaf6563447cd4c4cb9e8ccbd223eed2, type: 2}
   - {fileID: 11400000, guid: d8902ed158b1ef643a768dd62d416269, type: 2}
   - {fileID: 11400000, guid: 65d3eed9894701b40953052a66aa9bc4, type: 2}
-  _coffinPrefab: {fileID: 5602892480525270106, guid: 70a503fdf8f7b2143b6566587d3a4f56, type: 3}
 --- !u!4 &759924932
 Transform:
   m_ObjectHideFlags: 0
