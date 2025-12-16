@@ -57,21 +57,12 @@ public class StageManager : MonoBehaviour
     private void Update()
     {
         if (Input.GetKeyDown(KeyCode.Space))
-            HandleStartStageSequence();
+            SpawnInitialCoffin();
     }
-
-    private void HandleStartStageSequence()
-    {
-        Sequence startSequence = DOTween.Sequence();
-        //First Part Create VFX Smoke effect for coffin
-        startSequence.AppendCallback(() => SpawnInitialCoffin());
-        //Second Part Activate Coffins and Open Animation
-        startSequence.AppendInterval(5f);
-        startSequence.AppendCallback(() => ActivateCoffins());
-    }
-
     private void SpawnInitialCoffin()
     {
+        //When Player Enter the Button All coffins spawning
+
         for (int i = 0; i < _currentStage.MaxStageEnemyCount; i++)
         {
             var randomX = Random.Range(_currentStage.MinimumBorderX, _currentStage.MaximumBorderX);
@@ -80,16 +71,11 @@ public class StageManager : MonoBehaviour
             
             //Create VFX Effect with coffin
             var coffin = Instantiate(_coffinPrefab);
+            var enemy = _enemyList[i];
             coffin.transform.position = randomPosition;
-            coffin.gameObject.SetActive(false);
+            coffin.GetComponent<CoffinSpawner>().SetEnemyPrefab(enemy);
             _coffinList.Add(coffin);
-        }
-    }
-    private void ActivateCoffins()
-    {
-        foreach (var coffin in _coffinList)
-        {
-            coffin.gameObject.SetActive(true);
+            _enemyList.Remove(enemy);
         }
     }
 
