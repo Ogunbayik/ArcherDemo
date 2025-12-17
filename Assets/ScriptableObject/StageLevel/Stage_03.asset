@@ -14,9 +14,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::StageDataSO
   _enemyCountEntry:
   - EnemyPrefab: {fileID: 1082337053359213238, guid: 5b0f797b711926e4e9230923a420b823, type: 3}
-    EnemyCount: 3
-  - EnemyPrefab: {fileID: 3991307600619578877, guid: 7ab541b0f56bf79448c7fdcf3ac22d88, type: 3}
     EnemyCount: 4
+  - EnemyPrefab: {fileID: 3991307600619578877, guid: 7ab541b0f56bf79448c7fdcf3ac22d88, type: 3}
+    EnemyCount: 2
   _maxStageEnemyCount: 4
   _minimumBorderX: -20
   _maximumBorderX: 20

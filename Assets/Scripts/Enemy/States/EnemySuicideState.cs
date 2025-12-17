@@ -69,6 +69,7 @@ public class EnemySuicideState : IEnemyState
         destructionSequence.AppendInterval(explodeTime);
         destructionSequence.AppendCallback(() => Debug.Log("Activate SMOKE VFX"));
         destructionSequence.AppendCallback(() => enemy.gameObject.SetActive(false));
+        destructionSequence.JoinCallback(() => StageManager.Instance.DecreaseStageEnemyCount());
         //Sent to object to Pool
     }
     private void StartDestructionCountDown(EnemyBase enemy)

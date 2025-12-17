@@ -4,40 +4,30 @@ using DG.Tweening;
 
 public class CoffinSpawner : MonoBehaviour
 {
+    private CoffinAnimationController animationController;
+
     private GameObject _enemyPrefab;
+    private void Awake()
+    {
+        animationController = GetComponent<CoffinAnimationController>();
+    }
     private void Start()
     {
         StartSpawnSequnce();
     }
-
     private void StartSpawnSequnce()
     {
         Sequence spawnSequence = DOTween.Sequence();
-        //First Part waiting VFX Effect for half
-        spawnSequence.AppendInterval(2f);
         //Coffin Move Y coordinate than open
-        spawnSequence.AppendCallback(() => SummonAnimation());
+        spawnSequence.AppendCallback(() => animationController.PlaySummonAnimation());
         spawnSequence.AppendInterval(2f);
         //Coffin is Opening
-        spawnSequence.AppendCallback(() => OpenAnimation());
-        spawnSequence.AppendInterval(1f);
+        spawnSequence.AppendCallback(() => animationController.PlayOpenAnimation());
+        spawnSequence.AppendInterval(3f);
         //Creaing Enemy
         spawnSequence.AppendCallback(() => SpawnEnemy());
-        spawnSequence.JoinCallback(() => DestroyAnimation());
+        spawnSequence.JoinCallback(() => animationController.PlayDestroyAnimation());
     }
-    private void SummonAnimation()
-    {
-        Debug.Log("Coffin is Summoning");
-    }
-    private void OpenAnimation()
-    {
-        Debug.Log("Coffin is Opening");
-    }
-    private void DestroyAnimation()
-    {
-        Debug.Log("Coffin is Destroying");
-    }
-
     private void SpawnEnemy()
     {
         var enemy = Instantiate(_enemyPrefab);
